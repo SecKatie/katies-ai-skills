@@ -1,6 +1,6 @@
 ---
 name: yt-dlp
-description: Download audio and video from thousands of websites using yt-dlp. Feature-rich command-line tool supporting format selection, subtitle extraction, playlist handling, metadata embedding, and post-processing. Use this skill when downloading media, extracting audio, managing playlists, or troubleshooting downloads.
+description: Download audio and video from thousands of websites using yt-dlp. Feature-rich command-line tool supporting format selection, subtitle extraction, playlist handling, metadata embedding, and post-processing. This skill is triggered when the user says things like "download this video", "download from YouTube", "extract audio from video", "download this playlist", "get the mp3 from this video", "download subtitles", or "save this video locally".
 ---
 
 # yt-dlp Documentation Guide

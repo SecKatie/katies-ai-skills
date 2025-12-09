@@ -1,6 +1,6 @@
 ---
 name: jira-cli
-description: Read this skill before running any jira-cli commands to avoid blocking in interactive mode. Contains essential setup instructions, non-interactive command patterns with required flags (--plain, --raw, etc.), authentication troubleshooting, and comprehensive command reference for managing Jira tickets from the command line. This skill includes critical information about preventing command blocking, proper flag usage, and common pitfalls that will cause execution failures if not followed.
+description: Manage Jira tickets from the command line using jira-cli. Contains essential setup instructions, non-interactive command patterns with required flags (--plain, --raw, etc.), authentication troubleshooting, and comprehensive command reference. This skill is triggered when the user says things like "create a Jira ticket", "list my Jira issues", "update Jira issue", "move Jira ticket to done", "log time in Jira", "add comment to Jira", or "search Jira issues". IMPORTANT - Read this skill before running any jira-cli commands to avoid blocking in interactive mode.
 ---
 
 # Jira CLI Setup and Usage

@@ -1,6 +1,6 @@
 ---
 name: browser-tools
-description: Minimal CDP (Chrome DevTools Protocol) tools for browser automation, web scraping, and collaborative site exploration. Use this skill when you need to control Chrome programmatically, execute JavaScript in page context, take screenshots, pick DOM elements interactively, or extract cookies. Much lighter weight than full MCP servers (only ~225 tokens vs 13-18k), these Python CLI tools are composable via Bash and can be easily extended. Perfect for web scraping, frontend development, and automated testing tasks.
+description: Minimal CDP (Chrome DevTools Protocol) tools for browser automation, web scraping, and collaborative site exploration. Much lighter weight than full MCP servers (only ~225 tokens vs 13-18k), these Python CLI tools are composable via Bash and can be easily extended. This skill is triggered when the user says things like "scrape this website", "automate the browser", "take a screenshot of this page", "extract data from this webpage", "click this button on the page", "run JavaScript in the browser", or "get cookies from the browser".
 ---
 
 # Browser Tools

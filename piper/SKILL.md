@@ -1,6 +1,6 @@
 ---
-name: Piper TTS
-description: Convert text to speech using Piper, a fast, local, neural text-to-speech system with natural sounding voices.
+name: piper
+description: Convert text to speech using Piper, a fast, local, neural text-to-speech system with natural sounding voices. This skill is triggered when the user says things like "convert text to speech", "text to audio", "read this aloud", "create audio from text", "generate speech from text", "make an audio file from this text", or "use piper TTS".
 ---
 
 # Piper Text-to-Speech Skill

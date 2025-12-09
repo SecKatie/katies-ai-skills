@@ -1,6 +1,6 @@
 ---
 name: jj-vcs
-description: Jujutsu (jj) is a powerful Git-compatible version control system with innovative features like automatic rebasing, working-copy-as-a-commit, operation log with undo, and first-class conflict tracking. Use this skill when working with jj commands, understanding jj workflows, or migrating from Git to jj.
+description: Jujutsu (jj) is a powerful Git-compatible version control system with innovative features like automatic rebasing, working-copy-as-a-commit, operation log with undo, and first-class conflict tracking. This skill is triggered when the user says things like "use jj", "run jj commands", "jujutsu version control", "migrate from git to jj", "jj rebase", "jj squash", "jj log", or "help with jj workflow".
 ---
 
 # Jujutsu (jj) Version Control System

@@ -30,6 +30,7 @@ lola install kmtools -s project ./my-project
 | **mermaid** | Generate diagrams from code using mermaid-cli (20+ diagram types) |
 | **jira-cli** | Non-interactive Jira ticket management from the command line |
 | **browser-tools** | Minimal CDP tools for browser automation and web scraping |
+| **gh** | GitHub CLI for rulesets, releases, PRs, issues, and repository management |
 
 ## Usage
 

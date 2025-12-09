@@ -1,6 +1,6 @@
 ---
 name: just
-description: just is a handy command runner for saving and running project-specific commands. Features include recipe parameters, .env file loading, shell completion, cross-platform support, and recipes in arbitrary languages. Use this skill when writing justfiles, understanding just syntax, or setting up project automation.
+description: just is a handy command runner for saving and running project-specific commands. Features include recipe parameters, .env file loading, shell completion, cross-platform support, and recipes in arbitrary languages. This skill is triggered when the user says things like "create a justfile", "write a just recipe", "run just commands", "set up project automation with just", "understand justfile syntax", or "add a task to the justfile".
 ---
 
 # just - Command Runner
