@@ -1,2 +1,0 @@
-pychrome>=0.2.4
-websocket-client>=1.6.0

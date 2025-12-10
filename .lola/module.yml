@@ -10,5 +10,7 @@ skills:
 - piper
 - mermaid
 - jira-cli
-- browser-tools
 - gh
+
+commands:
+- git-commit
