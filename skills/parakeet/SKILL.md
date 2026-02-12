@@ -110,9 +110,41 @@ grep -v "^[0-9]*$" output.srt | grep -v "^[0-9][0-9]:[0-9][0-9]:[0-9][0-9]"
 If you need plain text without timestamps:
 
 ```bash
-# Extract only dialogue lines (skip numbers and timestamps)
+# Using the helper script (recommended)
+python3 srt_to_text.py output.srt > transcript.txt
+
+# Or with awk
 awk 'NF && !/^[0-9]+$/ && !/^[0-9]{2}:[0-9]{2}:[0-9]{2}/' output.srt > transcript.txt
 ```
+
+## Helper Scripts
+
+### srt_to_text.py
+
+This skill includes a Python helper script for converting SRT files to plain text. Located at `skills/parakeet/srt_to_text.py`.
+
+**Usage:**
+```bash
+# Basic conversion (outputs to stdout)
+python3 srt_to_text.py transcript.srt
+
+# Save to file
+python3 srt_to_text.py transcript.srt --output transcript.txt
+
+# Preserve paragraph breaks between subtitle blocks
+python3 srt_to_text.py transcript.srt --paragraphs
+
+# Pipe to other tools
+python3 srt_to_text.py transcript.srt | llm "Summarize this"
+```
+
+**Features:**
+- Strips subtitle numbers and timestamps
+- Joins text into continuous prose (or preserves paragraphs with `--paragraphs`)
+- Supports stdin input for piping
+- Clean output suitable for LLM processing
+
+**See also:** The **llm** skill includes an `audio-to-article.yaml` template designed to clean up transcripts from this helper into polished articles.
 
 ### Use with Other Tools
 

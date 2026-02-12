@@ -139,3 +139,31 @@ llm templates
 # Use a template
 llm -t summarize < article.txt
 ```
+
+## Included Templates
+
+This skill includes ready-to-use prompt templates in `templates/`.
+
+### audio-to-article.yaml
+
+Transforms raw audio transcripts into polished, readable articles. Used by the `/audio-to-article` command.
+
+```bash
+# Use with a transcript
+cat transcript.txt | llm -t templates/audio-to-article.yaml
+
+# Or with the full path
+python3 ../parakeet/srt_to_text.py audio.srt | llm -t templates/audio-to-article.yaml
+```
+
+**What it does:**
+- Removes filler words (um, uh, like, you know)
+- Fixes transcription errors from context
+- Adds paragraph breaks at topic transitions
+- Creates section headers where topics shift
+- Preserves the speaker's voice and meaning
+- Outputs clean markdown with title
+
+**Related skills:**
+- **parakeet** - Transcribes audio to SRT, includes `srt_to_text.py` helper for conversion
+- **yt-dlp** - Downloads audio from URLs (YouTube, podcasts, etc.)

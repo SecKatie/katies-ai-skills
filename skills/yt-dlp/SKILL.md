@@ -90,6 +90,19 @@ When the user asks to:
 - **Download with cookies** → Check `## Authentication Options:`
 - **Handle YouTube issues** → Check `wiki/PO-Token-Guide.md` and `wiki/EJS.md`
 
+## Related Skills
+
+For audio transcription workflows:
+- **parakeet** - Transcribe downloaded audio to text (SRT format)
+- **llm** - Clean up transcripts into articles using `audio-to-article.yaml` template
+
+Example workflow (download → transcribe → article):
+```bash
+yt-dlp -x --audio-format mp3 "URL"
+uvx parakeet-mlx audio.mp3
+python3 srt_to_text.py audio.srt | llm -t audio-to-article.yaml
+```
+
 ## Important Notes
 
 1. **Always check README.md first** - It contains the complete command-line reference
